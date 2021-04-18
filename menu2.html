@@ -1,0 +1,130 @@
+<html>
+    <head> 
+        <link rel="shortcut icon" href="logo.ico">
+         <title> Feel the beat</title>
+    </head>
+    <style type="text/css">
+        *   
+        {
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+        }          
+        li{
+        list-style-type:none;
+        position: relative ;
+        width:120px;
+        }
+                    
+        li a{
+        text-decoration:none;
+        display:inline-block;
+        padding:5px 10px;
+        width:120px;
+        height: 120px;
+        color: black;
+        background-color:rgb(217, 158, 252);
+        }
+                
+        li a:hover{
+        color:#000;
+        background-color:rgb(217, 158, 252);
+                    
+        }
+        
+        nav li ul{
+            display:none;
+            position:absolute;
+            top:0px;
+            left:120px;
+        }
+                
+        nav li:hover ul{
+            display:block;
+        }
+        .menu {
+            float: left;
+        } 
+        .inf {
+            float:left;
+        }
+        .vid {
+            float: left
+        }
+
+        </style>
+        
+     <body bgcolor="cyan">
+    <script>
+        var imagenes=new Array(
+            'inicio.jpg',
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+            'img5.jpg'
+        );
+        function rotarImagenes()
+        {
+            var index=Math.floor((Math.random()*imagenes.length));
+            document.getElementById("imagen").src=imagenes[index];
+        }
+        onload=function()
+        {
+            rotarImagenes();
+            setInterval(rotarImagenes,3000);
+        }
+    </script>
+    
+        <img src ="quedecir.png">
+        <img src="" id="imagen" >
+        <img src = "quedecir.png">
+    
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="Principal.html">Inicio</a></li>
+                <li><a href="quienes somos.html">Quiénes somos</a></li>
+                <li><a href="#">Acerca de</a><ul>
+                    <li><a href="#"> Eventos </a></li>
+                    <li><a href="#"> Transporte </a></li>
+                    <li><a href="#"> Precios </a></li>
+                </ul></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+         </nav> 
+     </div>       
+
+     <div class= vid>
+    <video autoplay controls src="fthebeatt principal.mp4#t=00"width="500" height="400">
+    </video > 
+    </div>  
+
+    <div class= inf>
+        
+            <h1><CENTER> BIENVENIDO</CENTER> </h1>
+            <p align= "left">
+        <FONT FACE="arial" SIZE=3 >
+            <BR><BR>¿Qué tal?, gracias por visitar nuestro sitio web, ya que estas aqui, dejame invitarte a nuestro <br>
+            proximo evento, el mas cercano es el concierto virtual y presencial de "the rose", 
+            <br>la banda de k-rock que esperabas con ansias ha vuelto, ya que estamos en el tema,
+            <br> permiteme contarte acerca de esta banda.
+            <br>
+            "The rose", es una banda de rock coreana, se colocaron el nombre de the rose, debido a que las <br>
+            las rosas suelen ser de varios colores, y ellos quieren reflejar que son una banda colorida. 
+            <br> 
+            Su debut fue el tres de agosto de 2017, en Corea con su sencillo "sorry" y la agencia<br>
+            "J&STAR Company". <br>
+            Por otro lado, la banda esta formada por 4 integrantes, 3 coreanos y un estadounidense,
+            <br> las posiciones y los nombres de los integrantes son los siguientes: <br>
+            Woo Sung es el lider, vocalista, rapero y guitarrista. <br>
+            Doo Joon es vocalista, rapero, guitarrista y tecladista <br>
+            Ha Jooon es vocalista y baterias <br>
+            Jae Hyung es vocalista, bajista y maknae del grupo <br>
+            <i> El termino maknae, hace referencia al menor del grupo</i>
+            <img src= "idk.jpg">
+        </FONT> </p>
+    </div>
+        
+    </body>   
+    </html>
