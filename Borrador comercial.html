@@ -1,0 +1,31 @@
+<html>
+    <head> 
+        <link rel="shortcut icon" href="logo.ico">
+         <title> Feel the beat</title>
+    </head>
+    <script>
+        var imagenes=new Array(
+            'inicio.jpg',
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+            'img5.jpg'
+        );
+        function rotarImagenes()
+        {
+            var index=Math.floor((Math.random(6)*imagenes.length));
+            document.getElementById("imagen").src=imagenes[index];
+        }
+        onload=function()
+        {
+            rotarImagenes();
+            setInterval(rotarImagenes,3000);
+        }
+    </script>
+    </head>
+    <body>
+        <a href="menu.html"></a>
+    <img src="" id="imagen" align= "right">
+    <img src= "youknow.png" align =left>
+</html>
